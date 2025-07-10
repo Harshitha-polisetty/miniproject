@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #ffe0ec, #ffeaa7);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-card {
+  background-color: #fff;
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 450px;
+  text-align: center;
+  animation: bounceIn 0.8s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  color: #d63031;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+.message {
+  color: #636e72;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #e17055;
+  font-weight: bold;
+}
+
+.details p {
+  font-size: 1rem;
+  color: #2d3436;
+  margin: 5px 0;
+}
+
+.footer {
+  margin-top: 20px;
+  color: #636e72;
+  font-size: 0.95rem;
+}
+
+.contact {
+  color: #d63031;
+  font-weight: bold;
+}
